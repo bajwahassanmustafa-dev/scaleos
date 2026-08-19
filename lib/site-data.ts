@@ -22,8 +22,8 @@ export type Platform = {
 
 export const platforms: Platform[] = [
   {
-    slug: 'bagh',
-    name: 'Bagh',
+    slug: 'restaurant-os',
+    name: 'Restaurant OS',
     industry: 'Restaurant Operating System',
     short: 'The operating system built for restaurants.',
     description:
@@ -42,10 +42,10 @@ export const platforms: Platform[] = [
       'Finance',
       'Analytics',
     ],
-    href: '/platforms/bagh',
+    href: '/platforms/restaurant-os',
   },
   {
-    slug: 'property',
+    slug: 'property-os',
     name: 'Property OS',
     industry: 'Property & Real Estate Operating System',
     short: 'One system for the entire property lifecycle.',
@@ -63,10 +63,10 @@ export const platforms: Platform[] = [
       'Payments',
       'Reporting',
     ],
-    href: '/platforms/property',
+    href: '/platforms/property-os',
   },
   {
-    slug: 'ecommerce',
+    slug: 'ecommerce-os',
     name: 'E-commerce OS',
     industry: 'E-commerce Business Operating System',
     short: 'Run the entire online business in one place.',
@@ -84,10 +84,10 @@ export const platforms: Platform[] = [
       'Payments',
       'Analytics',
     ],
-    href: '/platforms/ecommerce',
+    href: '/platforms/ecommerce-os',
   },
   {
-    slug: 'sports',
+    slug: 'sports-os',
     name: 'Sports OS',
     industry: 'Sports Business Operating System',
     short: 'The operating layer for sports businesses.',
@@ -105,10 +105,10 @@ export const platforms: Platform[] = [
       'Payments',
       'Insights',
     ],
-    href: '/platforms/sports',
+    href: '/platforms/sports-os',
   },
   {
-    slug: 'coffee',
+    slug: 'coffee-shop-os',
     name: 'Coffee Shop OS',
     industry: 'Coffee Shop Operating System',
     short: 'Built for the pace of a coffee shop.',
@@ -125,7 +125,7 @@ export const platforms: Platform[] = [
       'Staff',
       'Reporting',
     ],
-    href: '/platforms/coffee',
+    href: '/platforms/coffee-shop-os',
   },
 ]
 

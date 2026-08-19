@@ -1,5 +1,5 @@
 import { Container, Section, Eyebrow, ArrowLink } from '@/components/site/ui'
-import { BaghDashboard } from '@/components/site/bagh-dashboard'
+import { RestaurantDashboard } from '@/components/site/restaurant-dashboard'
 import { Reveal } from '@/components/site/reveal'
 
 const areas = [
@@ -12,7 +12,7 @@ const areas = [
   'Analytics',
 ]
 
-export function FeaturedBagh() {
+export function FeaturedRestaurant() {
   return (
     <Section className="border-t border-border">
       <Container>
@@ -23,7 +23,7 @@ export function FeaturedBagh() {
             </Reveal>
             <Reveal delay={60}>
               <h2 className="text-balance text-3xl font-semibold leading-[1.1] tracking-[-0.02em] sm:text-4xl md:text-[2.75rem]">
-                Meet Bagh.
+                Meet Restaurant OS.
               </h2>
             </Reveal>
             <Reveal delay={100}>
@@ -45,12 +45,12 @@ export function FeaturedBagh() {
               </ul>
             </Reveal>
             <Reveal delay={180}>
-              <ArrowLink href="/platforms/bagh">Explore Bagh</ArrowLink>
+              <ArrowLink href="/platforms/restaurant-os">Explore Restaurant OS</ArrowLink>
             </Reveal>
           </div>
 
           <Reveal delay={120}>
-            <BaghDashboard />
+            <RestaurantDashboard />
           </Reveal>
         </div>
       </Container>

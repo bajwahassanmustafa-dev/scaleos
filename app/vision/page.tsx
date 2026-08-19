@@ -32,7 +32,7 @@ const horizon = [
   {
     phase: 'Today',
     title: 'The first operating system',
-    body: 'Bagh brings the restaurant industry into one connected system — the first proof of the model.',
+    body: 'Restaurant OS brings the restaurant industry into one connected system — the first proof of the model.',
   },
   {
     phase: 'Next',

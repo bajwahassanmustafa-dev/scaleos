@@ -1,37 +1,30 @@
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 /**
- * ScaleOS mark — a rounded system aperture: an outer frame representing
- * the operating layer, with an offset inner core representing the business
- * it is built around.
+ * Official ScaleOS mark — an isometric stack of building blocks with an
+ * upward arrow, representing businesses scaling on a shared operating layer.
+ *
+ * The source artwork is a white mark on black, so it is presented inside a
+ * rounded dark badge that keeps the original asset crisp and unmodified on
+ * any background.
  */
 export function Logo({ className }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className={cn('text-foreground', className)}
-      aria-hidden="true"
+    <span
+      className={cn(
+        'relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-[22%] bg-[#0a0a0a] ring-1 ring-border/60',
+        className,
+      )}
     >
-      <rect
-        x="2.25"
-        y="2.25"
-        width="19.5"
-        height="19.5"
-        rx="6"
-        className="stroke-current"
-        strokeWidth="1.6"
-        opacity="0.9"
+      <Image
+        src="/scaleos-logo.png"
+        alt="ScaleOS"
+        width={96}
+        height={96}
+        priority
+        className="h-full w-full object-contain"
       />
-      <rect
-        x="7"
-        y="7"
-        width="10"
-        height="10"
-        rx="3.2"
-        className="fill-brand"
-      />
-      <circle cx="12" cy="12" r="1.9" className="fill-brand-foreground" />
-    </svg>
+    </span>
   )
 }

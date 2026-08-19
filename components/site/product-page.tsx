@@ -5,13 +5,13 @@ import { productContent } from '@/lib/product-content'
 import { Container, Section, SectionHeader, CTA, StatusPill } from './ui'
 import { Reveal } from './reveal'
 import { CTASection } from './cta-section'
-import { BaghDashboard } from './bagh-dashboard'
+import { RestaurantDashboard } from './restaurant-dashboard'
 import { ProductMock } from './product-mock'
 
 export function ProductPage({ platform }: { platform: Platform }) {
   const c = productContent[platform.slug]
   const Icon = platform.icon
-  const isBagh = platform.slug === 'bagh'
+  const isRestaurantOS = platform.slug === 'restaurant-os'
 
   return (
     <>
@@ -76,7 +76,11 @@ export function ProductPage({ platform }: { platform: Platform }) {
             </div>
 
             <Reveal delay={200} className="min-w-0">
-              {isBagh ? <BaghDashboard /> : <ProductMock platform={platform} />}
+              {isRestaurantOS ? (
+                <RestaurantDashboard />
+              ) : (
+                <ProductMock platform={platform} />
+              )}
             </Reveal>
           </div>
         </Container>

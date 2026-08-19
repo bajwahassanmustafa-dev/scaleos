@@ -10,6 +10,7 @@ import {
   Clock,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Logo } from './logo'
 
 const sidebar = [
   { label: 'Overview', icon: LayoutDashboard, active: true },
@@ -42,7 +43,7 @@ const toneMap: Record<string, string> = {
   muted: 'bg-secondary text-muted-foreground',
 }
 
-export function BaghDashboard({ className }: { className?: string }) {
+export function RestaurantDashboard({ className }: { className?: string }) {
   return (
     <div
       className={cn(
@@ -59,7 +60,7 @@ export function BaghDashboard({ className }: { className?: string }) {
         </div>
         <div className="ml-3 flex items-center gap-2 rounded-md bg-card px-2.5 py-1 font-mono text-[0.7rem] text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-success" />
-          app.bagh.scaleos.com
+          app.restaurant.scaleos.com
         </div>
       </div>
 
@@ -67,10 +68,8 @@ export function BaghDashboard({ className }: { className?: string }) {
         {/* sidebar */}
         <aside className="hidden w-48 shrink-0 flex-col gap-0.5 border-r border-border bg-surface/60 p-3 sm:flex">
           <div className="mb-3 flex items-center gap-2 px-2 py-1">
-            <span className="flex size-6 items-center justify-center rounded-md bg-foreground text-[0.7rem] font-bold text-background">
-              B
-            </span>
-            <span className="text-sm font-semibold">Bagh</span>
+            <Logo className="size-6" />
+            <span className="text-sm font-semibold tracking-[-0.01em]">Restaurant OS</span>
           </div>
           {sidebar.map((item) => {
             const Icon = item.icon

@@ -8,7 +8,7 @@ import { CTASection } from '@/components/site/cta-section'
 export const metadata: Metadata = {
   title: 'Platforms',
   description:
-    'Explore the ScaleOS ecosystem of industry operating systems — Bagh for restaurants, plus Property, E-commerce, Sports and Coffee Shop OS.',
+    'Explore the ScaleOS ecosystem of industry operating systems — Restaurant OS, plus Property, E-commerce, Sports and Coffee Shop OS.',
 }
 
 export default function PlatformsPage() {

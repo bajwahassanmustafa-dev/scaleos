@@ -7,7 +7,7 @@ export type ContactState = {
 }
 
 const interests = [
-  'Bagh (Restaurants)',
+  'Restaurant OS',
   'Property OS',
   'E-commerce OS',
   'Sports OS',

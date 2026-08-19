@@ -14,7 +14,7 @@ const points = [
   {
     icon: Building2,
     title: 'Platforms',
-    body: 'Interested in running your business on Bagh or another ScaleOS operating system.',
+    body: 'Interested in running your business on Restaurant OS or another ScaleOS operating system.',
   },
   {
     icon: MessageSquare,

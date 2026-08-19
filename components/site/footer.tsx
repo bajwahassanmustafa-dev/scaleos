@@ -21,7 +21,7 @@ const columns = [
     title: 'Ecosystem',
     links: [
       { label: 'All Platforms', href: '/platforms' },
-      { label: 'Explore Bagh', href: '/platforms/bagh' },
+      { label: 'Explore Restaurant OS', href: '/platforms/restaurant-os' },
       { label: 'Digital Growth', href: '/services' },
       { label: 'Start a Conversation', href: '/contact' },
     ],

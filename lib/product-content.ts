@@ -18,11 +18,11 @@ export type ProductContent = {
 }
 
 export const productContent: Record<string, ProductContent> = {
-  bagh: {
+  'restaurant-os': {
     headline: 'Run your restaurant from one place.',
-    subhead: 'Bagh — Restaurant Operating System',
+    subhead: 'Restaurant OS — Restaurant Operating System',
     intro:
-      'Bagh brings point of sale, orders, inventory, staff and finance into one connected system — designed around the way restaurants actually operate.',
+      'Restaurant OS brings point of sale, orders, inventory, staff and finance into one connected system — designed around the way restaurants actually operate.',
     problem: {
       title: 'Restaurants run on too many disconnected tools.',
       body: 'A POS here, a spreadsheet there, a separate app for delivery and another for staff. Information lives in silos, and nothing talks to each other.',
@@ -34,7 +34,7 @@ export const productContent: Record<string, ProductContent> = {
     },
     solution: {
       title: 'One connected system, built for restaurants.',
-      body: 'Bagh unifies every part of the operation so the whole restaurant runs from a single source of truth.',
+      body: 'Restaurant OS unifies every part of the operation so the whole restaurant runs from a single source of truth.',
       points: [
         { title: 'Front of house', body: 'Fast point of sale, table and order management built for service speed.' },
         { title: 'Back of house', body: 'Inventory, recipes and suppliers connected directly to sales.' },
@@ -50,7 +50,7 @@ export const productContent: Record<string, ProductContent> = {
     ],
     ctaLabel: 'Get Early Access',
   },
-  property: {
+  'property-os': {
     headline: 'One system for the entire property lifecycle.',
     subhead: 'Property OS — Property & Real Estate Operating System',
     intro:
@@ -82,7 +82,7 @@ export const productContent: Record<string, ProductContent> = {
     ],
     ctaLabel: 'Request Early Access',
   },
-  ecommerce: {
+  'ecommerce-os': {
     headline: 'Run the entire online business in one place.',
     subhead: 'E-commerce OS — E-commerce Business Operating System',
     intro:
@@ -114,7 +114,7 @@ export const productContent: Record<string, ProductContent> = {
     ],
     ctaLabel: 'Request Early Access',
   },
-  sports: {
+  'sports-os': {
     headline: 'The operating layer for sports businesses.',
     subhead: 'Sports OS — Sports Business Operating System',
     intro:
@@ -146,7 +146,7 @@ export const productContent: Record<string, ProductContent> = {
     ],
     ctaLabel: 'Request Early Access',
   },
-  coffee: {
+  'coffee-shop-os': {
     headline: 'Built for the pace of a coffee shop.',
     subhead: 'Coffee Shop OS — Coffee Shop Operating System',
     intro:

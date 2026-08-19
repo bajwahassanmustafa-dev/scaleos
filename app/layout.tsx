@@ -33,7 +33,10 @@ export const metadata: Metadata = {
     'restaurant software',
     'property management',
     'e-commerce operations',
-    'Bagh',
+    'Restaurant OS',
+    'Property OS',
+    'Sports OS',
+    'Coffee Shop OS',
   ],
   authors: [{ name: 'ScaleOS' }],
   alternates: { canonical: '/' },
@@ -44,12 +47,21 @@ export const metadata: Metadata = {
     title: 'ScaleOS — Every Business Deserves Its Own Operating System',
     description:
       'Purpose-built operating systems for the way businesses actually work.',
+    images: [
+      {
+        url: '/scaleos-logo.png',
+        width: 1254,
+        height: 1254,
+        alt: 'ScaleOS',
+      },
+    ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'ScaleOS — Every Business Deserves Its Own Operating System',
     description:
       'Purpose-built operating systems for the way businesses actually work.',
+    images: ['/scaleos-logo.png'],
   },
   generator: 'v0.app',
 }

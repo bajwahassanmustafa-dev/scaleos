@@ -30,7 +30,7 @@ const values = [
 
 const facts = [
   { label: 'Focus', value: 'Industry operating systems' },
-  { label: 'First platform', value: 'Bagh — Restaurants' },
+  { label: 'First platform', value: 'Restaurant OS' },
   { label: 'Practice', value: 'Platforms + growth services' },
   { label: 'Approach', value: 'AI-native, connected by design' },
 ]
@@ -84,8 +84,8 @@ export default function AboutPage() {
                 <p>
                   We set out to build the opposite: deep, connected operating
                   systems designed around how a specific industry actually works.
-                  Bagh, our restaurant operating system, is the first. It won&apos;t
-                  be the last.
+                  Restaurant OS, our restaurant operating system, is the first.
+                  It won&apos;t be the last.
                 </p>
                 <p>
                   Alongside our platforms, our services practice helps businesses
