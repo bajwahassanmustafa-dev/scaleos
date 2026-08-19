@@ -2,7 +2,7 @@
 
 import { useActionState } from 'react'
 import { useFormStatus } from 'react-dom'
-import { Check, Loader2 } from 'lucide-react'
+import { Check, Loader as Loader2 } from 'lucide-react'
 import { submitContact, type ContactState } from '@/app/contact/actions'
 import { interests } from '@/lib/contact-data'
 import { cn } from '@/lib/utils'
