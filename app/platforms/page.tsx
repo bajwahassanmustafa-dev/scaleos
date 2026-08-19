@@ -3,6 +3,7 @@ import { platforms } from '@/lib/site-data'
 import { Container, Section, SectionHeader } from '@/components/site/ui'
 import { Reveal } from '@/components/site/reveal'
 import { PlatformCard } from '@/components/site/platform-card'
+import { PlatformWorkflow } from '@/components/site/platform-workflow'
 import { CTASection } from '@/components/site/cta-section'
 
 export const metadata: Metadata = {
@@ -23,8 +24,8 @@ export default function PlatformsPage() {
           <Reveal>
             <SectionHeader
               eyebrow="The ecosystem"
-              title="One operating system for every industry."
-              description="Each ScaleOS platform brings an entire industry's operations into a single connected system — built on shared foundations, tailored to how each business really runs."
+              title="Operating systems built around the way your business works."
+              description="Every industry has different workflows, challenges and priorities. ScaleOS brings the tools and operations that matter into purpose-built systems designed for each business."
             />
           </Reveal>
         </Container>
@@ -41,6 +42,8 @@ export default function PlatformsPage() {
           </div>
         </Container>
       </Section>
+
+      <PlatformWorkflow />
 
       <CTASection
         eyebrow="Build with ScaleOS"

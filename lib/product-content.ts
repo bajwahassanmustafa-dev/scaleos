@@ -19,10 +19,10 @@ export type ProductContent = {
 
 export const productContent: Record<string, ProductContent> = {
   'restaurant-os': {
-    headline: 'Run your restaurant from one place.',
+    headline: 'Run your restaurant from one connected system.',
     subhead: 'Restaurant OS — Restaurant Operating System',
     intro:
-      'Restaurant OS brings point of sale, orders, inventory, staff and finance into one connected system — designed around the way restaurants actually operate.',
+      'From taking orders and managing inventory to understanding customers and tracking performance, Restaurant OS brings your restaurant\u2019s everyday operations together.',
     problem: {
       title: 'Restaurants run on too many disconnected tools.',
       body: 'A POS here, a spreadsheet there, a separate app for delivery and another for staff. Information lives in silos, and nothing talks to each other.',
@@ -51,10 +51,10 @@ export const productContent: Record<string, ProductContent> = {
     ctaLabel: 'Get Early Access',
   },
   'property-os': {
-    headline: 'One system for the entire property lifecycle.',
+    headline: 'Bring your property operations into one connected system.',
     subhead: 'Property OS — Property & Real Estate Operating System',
     intro:
-      'Property OS connects listings, leasing, tenants, maintenance and finance so property teams manage their whole portfolio from one place.',
+      'Property OS brings property information, operational workflows and tenant relationships together so your portfolio runs from a single connected system.',
     problem: {
       title: 'Property operations are spread across too many tools.',
       body: 'Listings in one place, contracts in another, maintenance over email and finance in spreadsheets. Nothing connects across the portfolio.',
@@ -83,10 +83,10 @@ export const productContent: Record<string, ProductContent> = {
     ctaLabel: 'Request Early Access',
   },
   'ecommerce-os': {
-    headline: 'Run the entire online business in one place.',
+    headline: 'Bring your online business operations together in one place.',
     subhead: 'E-commerce OS — E-commerce Business Operating System',
     intro:
-      'E-commerce OS unifies catalog, orders, fulfilment, customers and performance so your online store operates as one connected system.',
+      'E-commerce OS unifies products, orders, customers and business performance so your online store operates as one connected system.',
     problem: {
       title: 'Online stores are stitched together from many tools.',
       body: 'A storefront, a separate order tool, another for fulfilment and disconnected marketing. Growth means more tools and more complexity.',
@@ -115,10 +115,10 @@ export const productContent: Record<string, ProductContent> = {
     ctaLabel: 'Request Early Access',
   },
   'sports-os': {
-    headline: 'The operating layer for sports businesses.',
+    headline: 'Run your sports business or facility with one connected operating system.',
     subhead: 'Sports OS — Sports Business Operating System',
     intro:
-      'Sports OS coordinates memberships, scheduling, facilities, teams and payments for clubs, academies and sports venues.',
+      'Sports OS coordinates members, scheduling, facilities and payments so your sports business or facility runs from one connected system.',
     problem: {
       title: 'Running a sports business means juggling too many systems.',
       body: 'Memberships in one tool, bookings in another, payments elsewhere and communication over messages. Coordination becomes the hardest part.',
@@ -147,10 +147,10 @@ export const productContent: Record<string, ProductContent> = {
     ctaLabel: 'Request Early Access',
   },
   'coffee-shop-os': {
-    headline: 'Built for the pace of a coffee shop.',
+    headline: 'Purpose-built technology for the everyday operations of modern coffee shops.',
     subhead: 'Coffee Shop OS — Coffee Shop Operating System',
     intro:
-      'Coffee Shop OS brings fast point of sale, mobile orders, inventory and loyalty into one system designed for the speed of coffee service.',
+      'Coffee Shop OS brings fast point of sale, mobile orders, inventory and loyalty into one system designed for the speed and rhythm of coffee service.',
     problem: {
       title: 'Coffee shops move fast — their tools should too.',
       body: 'Slow point of sale, disconnected mobile orders and manual stock tracking get in the way of fast, consistent service.',

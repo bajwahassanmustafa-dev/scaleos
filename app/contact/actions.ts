@@ -6,15 +6,7 @@ export type ContactState = {
   errors?: Partial<Record<'name' | 'email' | 'company' | 'interest' | 'message', string>>
 }
 
-const interests = [
-  'Restaurant OS',
-  'Property OS',
-  'E-commerce OS',
-  'Sports OS',
-  'Coffee Shop OS',
-  'Services & growth',
-  'Something else',
-]
+import { interests } from '@/lib/contact-data'
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
@@ -63,4 +55,3 @@ export async function submitContact(
   }
 }
 
-export { interests }

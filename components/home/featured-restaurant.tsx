@@ -1,56 +1,52 @@
-import { Container, Section, Eyebrow, ArrowLink } from '@/components/site/ui'
+import { Container, Section, Eyebrow, CTA } from '@/components/site/ui'
 import { RestaurantDashboard } from '@/components/site/restaurant-dashboard'
+import { RestaurantArchitecture } from '@/components/site/restaurant-architecture'
 import { Reveal } from '@/components/site/reveal'
-
-const areas = [
-  'Point of Sale',
-  'Orders',
-  'Inventory',
-  'Staff',
-  'Customers',
-  'Finance',
-  'Analytics',
-]
 
 export function FeaturedRestaurant() {
   return (
     <Section className="border-t border-border">
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.2fr] lg:gap-14">
-          <div className="flex flex-col items-start gap-6">
-            <Reveal>
-              <Eyebrow>Flagship Product</Eyebrow>
-            </Reveal>
-            <Reveal delay={60}>
-              <h2 className="text-balance text-3xl font-semibold leading-[1.1] tracking-[-0.02em] sm:text-4xl md:text-[2.75rem]">
-                Meet Restaurant OS.
-              </h2>
-            </Reveal>
-            <Reveal delay={100}>
-              <p className="max-w-md text-pretty text-lg leading-relaxed text-muted-foreground">
-                The operating system built for restaurants — bringing every part
-                of the operation into one connected system.
-              </p>
-            </Reveal>
-            <Reveal delay={140}>
-              <ul className="flex flex-wrap gap-2">
-                {areas.map((a) => (
-                  <li
-                    key={a}
-                    className="rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground/80"
-                  >
-                    {a}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-            <Reveal delay={180}>
-              <ArrowLink href="/platforms/restaurant-os">Explore Restaurant OS</ArrowLink>
-            </Reveal>
-          </div>
+        <div className="flex flex-col gap-3">
+          <Reveal>
+            <Eyebrow>Flagship Product</Eyebrow>
+          </Reveal>
+          <Reveal delay={60}>
+            <h2 className="max-w-2xl text-balance text-3xl font-semibold leading-[1.1] tracking-[-0.02em] sm:text-4xl md:text-[2.75rem]">
+              Run your restaurant from one connected system.
+            </h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+              From taking orders and managing inventory to understanding customers
+              and tracking performance, Restaurant OS brings your restaurant&apos;s
+              everyday operations together.
+            </p>
+          </Reveal>
+        </div>
 
-          <Reveal delay={120}>
+        {/* Dashboard + Architecture side by side */}
+        <div className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_1fr] lg:gap-8">
+          <Reveal delay={80}>
             <RestaurantDashboard />
+          </Reveal>
+          <Reveal delay={160} className="flex flex-col gap-6">
+            <div className="flex flex-col gap-3">
+              <span className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-brand">
+                More than a POS
+              </span>
+              <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
+                Restaurant OS is a complete restaurant operating system — point of
+                sale, orders, QR menu, online ordering, delivery, inventory, staff,
+                customers, loyalty, finance, analytics and website, connected as one.
+              </p>
+            </div>
+            <RestaurantArchitecture />
+            <div>
+              <CTA href="/platforms/restaurant-os" variant="primary" size="lg" arrow>
+                Explore Restaurant OS
+              </CTA>
+            </div>
           </Reveal>
         </div>
       </Container>

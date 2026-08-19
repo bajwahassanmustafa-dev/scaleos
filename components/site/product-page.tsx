@@ -6,6 +6,7 @@ import { Container, Section, SectionHeader, CTA, StatusPill } from './ui'
 import { Reveal } from './reveal'
 import { CTASection } from './cta-section'
 import { RestaurantDashboard } from './restaurant-dashboard'
+import { RestaurantArchitecture } from './restaurant-architecture'
 import { ProductMock } from './product-mock'
 
 export function ProductPage({ platform }: { platform: Platform }) {
@@ -50,17 +51,17 @@ export function ProductPage({ platform }: { platform: Platform }) {
               </Reveal>
               <Reveal delay={60}>
                 <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl">
-                  {c.headline}
+                  {platform.valueProp}
                 </h1>
               </Reveal>
               <Reveal delay={120}>
                 <p className="font-mono text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                  {c.subhead}
+                  {platform.name} — {platform.industry}
                 </p>
               </Reveal>
               <Reveal delay={180}>
                 <p className="max-w-md text-pretty text-lg leading-relaxed text-muted-foreground">
-                  {c.intro}
+                  {platform.description}
                 </p>
               </Reveal>
               <Reveal delay={240}>
@@ -143,32 +144,64 @@ export function ProductPage({ platform }: { platform: Platform }) {
         </Container>
       </Section>
 
-      {/* Modules */}
-      <Section className="border-t border-border bg-surface/40">
-        <Container>
-          <Reveal>
-            <SectionHeader
-              eyebrow="One connected system"
-              title="Every module, working together."
-              description={c.moduleNote}
-            />
-          </Reveal>
-          <div className="mt-10 flex flex-wrap gap-2.5">
-            {platform.modules.map((m, i) => (
-              <Reveal key={m} delay={i * 40}>
-                <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium shadow-soft">
-                  <span
-                    className="h-1.5 w-1.5 rounded-full"
-                    style={{ background: platform.accent }}
-                    aria-hidden
-                  />
-                  {m}
-                </span>
-              </Reveal>
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {/* Capability architecture — Restaurant OS gets the full visual */}
+      {isRestaurantOS ? (
+        <Section className="border-t border-border bg-surface/40">
+          <Container>
+            <Reveal>
+              <SectionHeader
+                eyebrow="The architecture"
+                title="One system. Every part of the restaurant."
+                description="Restaurant OS is more than a POS. It brings the four pillars of running a restaurant — operating, selling, managing and growing — into one connected operating system."
+              />
+            </Reveal>
+            <Reveal delay={120} className="mt-12">
+              <RestaurantArchitecture />
+            </Reveal>
+          </Container>
+        </Section>
+      ) : (
+        <Section className="border-t border-border bg-surface/40">
+          <Container>
+            <Reveal>
+              <SectionHeader
+                eyebrow="One connected system"
+                title="Every area, working together."
+                description={c.moduleNote}
+              />
+            </Reveal>
+            <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {platform.capabilities.map((cap, i) => (
+                <Reveal key={cap.label} delay={i * 70}>
+                  <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-card p-5 shadow-soft">
+                    <span
+                      className="font-mono text-xs font-semibold uppercase tracking-[0.16em]"
+                      style={{ color: platform.accent }}
+                    >
+                      {cap.label}
+                    </span>
+                    <ul className="flex flex-col gap-2">
+                      {cap.items.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-center gap-2 text-sm font-medium leading-tight tracking-[-0.01em]"
+                        >
+                          <span
+                            className="h-1.5 w-1.5 shrink-0 rounded-full"
+                            style={{ background: platform.accent }}
+                            aria-hidden
+                          />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* How it works */}
       <Section className="border-t border-border">
